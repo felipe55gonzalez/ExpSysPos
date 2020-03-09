@@ -117,14 +117,50 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Splash" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Splash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="progreso.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        wbAIHB39D6FFkI0q+fAXAAAAAElFTkSuQmCC
+</value>
   </data>
-  <data name="SplashShadow" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SplashShadow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Face" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Face.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>
