@@ -1,6 +1,6 @@
 ﻿namespace ExpSysPos
 {
-    partial class Form1
+    partial class Splash
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Splash));
             this.label1 = new System.Windows.Forms.Label();
             this.progreso = new Bunifu.Framework.UI.BunifuCircleProgressbar();
             this.label2 = new System.Windows.Forms.Label();
@@ -137,7 +137,7 @@
             this.timer1.Interval = 50;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // Form1
+            // Splash
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -154,9 +154,10 @@
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "Splash";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Principal";
             this.TransparencyKey = System.Drawing.SystemColors.ActiveCaptionText;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);

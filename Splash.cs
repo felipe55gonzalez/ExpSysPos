@@ -10,10 +10,11 @@ using System.Windows.Forms;
 
 namespace ExpSysPos
 {
-    public partial class Form1 : Form
+    public partial class Splash : Form
     {
+        
         int cont = 0;
-        public Form1()
+        public Splash()
         {
             InitializeComponent();
         }
@@ -30,14 +31,19 @@ namespace ExpSysPos
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (cont<100) {
+            if (cont < 100)
+            {
                 cont++;
                 progreso.Value = cont;
-          }
+            }
             else
             {
                 Console.Write("Cargado");
                 timer1.Enabled = false;
+                Principal p = new Principal();
+                p.Show();
+                this.Hide();
+            
             }
         }
 

@@ -3,8 +3,9 @@ C:\Users\Ciber\Documents\GitHub\ExpSysPos\bin\Debug\ExpSysPos.exe
 C:\Users\Ciber\Documents\GitHub\ExpSysPos\bin\Debug\ExpSysPos.pdb
 C:\Users\Ciber\Documents\GitHub\ExpSysPos\bin\Debug\Bunifu_UI_v1.52.dll
 C:\Users\Ciber\Documents\GitHub\ExpSysPos\obj\Debug\ExpSysPos.csprojResolveAssemblyReference.cache
-C:\Users\Ciber\Documents\GitHub\ExpSysPos\obj\Debug\ExpSysPos.Form1.resources
 C:\Users\Ciber\Documents\GitHub\ExpSysPos\obj\Debug\ExpSysPos.Properties.Resources.resources
 C:\Users\Ciber\Documents\GitHub\ExpSysPos\obj\Debug\ExpSysPos.csproj.GenerateResource.Cache
 C:\Users\Ciber\Documents\GitHub\ExpSysPos\obj\Debug\ExpSysPos.exe
 C:\Users\Ciber\Documents\GitHub\ExpSysPos\obj\Debug\ExpSysPos.pdb
+C:\Users\Ciber\Documents\GitHub\ExpSysPos\obj\Debug\ExpSysPos.Splash.resources
+C:\Users\Ciber\Documents\GitHub\ExpSysPos\obj\Debug\ExpSysPos.Principal.resources
