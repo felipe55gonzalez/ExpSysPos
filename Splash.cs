@@ -40,7 +40,7 @@ namespace ExpSysPos
             {
                 Console.Write("Cargado");
                 timer1.Enabled = false;
-                Principal p = new Principal();
+                Login p = new Login();
                 p.Show();
                 this.Hide();
             
@@ -50,6 +50,7 @@ namespace ExpSysPos
         private void Form1_Load(object sender, EventArgs e)
         {
             timer1.Enabled = true;
+            
         }
 
     }

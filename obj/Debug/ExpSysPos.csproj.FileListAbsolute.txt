@@ -9,3 +9,4 @@ C:\Users\Ciber\Documents\GitHub\ExpSysPos\obj\Debug\ExpSysPos.exe
 C:\Users\Ciber\Documents\GitHub\ExpSysPos\obj\Debug\ExpSysPos.pdb
 C:\Users\Ciber\Documents\GitHub\ExpSysPos\obj\Debug\ExpSysPos.Splash.resources
 C:\Users\Ciber\Documents\GitHub\ExpSysPos\obj\Debug\ExpSysPos.Principal.resources
+C:\Users\Ciber\Documents\GitHub\ExpSysPos\obj\Debug\ExpSysPos.Login.resources

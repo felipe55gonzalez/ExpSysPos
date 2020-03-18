@@ -13,8 +13,8 @@ namespace ExpSysPos
 {
     public partial class Principal : Form
     {
+        public CurrentUser cuser;
         SerialPort mySerialPort = new SerialPort("COM8");
-        String oldp="000.000";
         string indata="00.00";
         
         public Principal()
@@ -22,6 +22,7 @@ namespace ExpSysPos
             
             InitializeComponent();
             hideSubMenu();
+            
 
 
             //mySerialPort.BaudRate = 9600;
@@ -33,8 +34,7 @@ namespace ExpSysPos
             //mySerialPort.DataReceived += new SerialDataReceivedEventHandler(DataReceivedHandler);
 
             //mySerialPort.Open();
-            //mySerialPort.WriteLine("$");
-            //mySerialPort.WriteLine("/r");
+
         }
         public void DataReceivedHandler(object sender, SerialDataReceivedEventArgs e)
         {
@@ -67,6 +67,7 @@ namespace ExpSysPos
         private void btnMedia_Click(object sender, EventArgs e)
         {
             showSubMenu(panelMediaSubMenu);
+            CodBox.Focus();
         }
 
         #region MediaSubMenu
@@ -107,6 +108,7 @@ namespace ExpSysPos
         private void btnPlaylist_Click(object sender, EventArgs e)
         {
             showSubMenu(panelPlaylistSubMenu);
+            CodBox.Focus();
         }
 
         #region PlayListManagemetSubMenu
@@ -146,6 +148,7 @@ namespace ExpSysPos
         private void btnTools_Click(object sender, EventArgs e)
         {
             showSubMenu(panelToolsSubMenu);
+            CodBox.Focus();
         }
         #region ToolsSubMenu
         private void button13_Click(object sender, EventArgs e)
@@ -196,6 +199,7 @@ namespace ExpSysPos
             //your codes
             //..
             hideSubMenu();
+            CodBox.Focus();
         }
         private void btnExit_Click(object sender, EventArgs e)
         {
@@ -232,6 +236,82 @@ namespace ExpSysPos
             //mySerialPort.WriteLine("$");
             //mySerialPort.WriteLine("/r");
             //BasBox.Text = indata;
+        }
+
+        private void Principal_VisibleChanged(object sender, EventArgs e)
+        {
+            LabelName.Text = cuser.Name;
+            CodBox.Focus();
+        }
+
+        private void button9_Click_1(object sender, EventArgs e)
+        {
+            Revisarp();
+            CodBox.Focus();
+        }
+        public void Revisarp()
+        {
+
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            CodBox.Focus();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            CodBox.Text="";
+            CodBox.Focus();
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            CodBox.Focus();
+        }
+
+        private void BasBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BasBox_Click(object sender, EventArgs e)
+        {
+            CodBox.Focus();
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            CodBox.Focus();
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            CodBox.Focus();
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            CodBox.Focus();
+        }
+
+        private void TotalBox_Click(object sender, EventArgs e)
+        {
+            CodBox.Focus();
+        }
+
+        private void CodBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        private void CodBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                Console.WriteLine(CodBox.Text);
+                CodBox.Text = "";
+            }
         }
     }
 }

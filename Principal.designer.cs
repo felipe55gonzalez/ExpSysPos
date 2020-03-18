@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelSideMenu = new System.Windows.Forms.Panel();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnHelp = new System.Windows.Forms.Button();
@@ -76,6 +76,7 @@
             this.CodBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.LabelName = new System.Windows.Forms.Label();
             this.panelSideMenu.SuspendLayout();
             this.panelToolsSubMenu.SuspendLayout();
             this.panelPlaylistSubMenu.SuspendLayout();
@@ -125,6 +126,7 @@
             this.btnExit.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnExit.Size = new System.Drawing.Size(233, 45);
             this.btnExit.TabIndex = 9;
+            this.btnExit.TabStop = false;
             this.btnExit.Text = " Salir";
             this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnExit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -147,6 +149,7 @@
             this.btnHelp.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnHelp.Size = new System.Drawing.Size(233, 45);
             this.btnHelp.TabIndex = 8;
+            this.btnHelp.TabStop = false;
             this.btnHelp.Text = " Ayuda";
             this.btnHelp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHelp.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -178,6 +181,7 @@
             this.button10.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button10.Size = new System.Drawing.Size(233, 40);
             this.button10.TabIndex = 2;
+            this.button10.TabStop = false;
             this.button10.Text = "Preferences";
             this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button10.UseVisualStyleBackColor = true;
@@ -196,6 +200,7 @@
             this.button12.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button12.Size = new System.Drawing.Size(233, 40);
             this.button12.TabIndex = 1;
+            this.button12.TabStop = false;
             this.button12.Text = "Effects and filters";
             this.button12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button12.UseVisualStyleBackColor = true;
@@ -214,6 +219,7 @@
             this.button13.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button13.Size = new System.Drawing.Size(233, 40);
             this.button13.TabIndex = 0;
+            this.button13.TabStop = false;
             this.button13.Text = "Media converter";
             this.button13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button13.UseVisualStyleBackColor = true;
@@ -236,6 +242,7 @@
             this.btnTools.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnTools.Size = new System.Drawing.Size(233, 45);
             this.btnTools.TabIndex = 6;
+            this.btnTools.TabStop = false;
             this.btnTools.Text = " Configuracion";
             this.btnTools.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTools.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -270,6 +277,7 @@
             this.button1.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button1.Size = new System.Drawing.Size(233, 40);
             this.button1.TabIndex = 3;
+            this.button1.TabStop = false;
             this.button1.Text = "Reportes";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = false;
@@ -290,6 +298,7 @@
             this.button6.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button6.Size = new System.Drawing.Size(233, 40);
             this.button6.TabIndex = 2;
+            this.button6.TabStop = false;
             this.button6.Text = "Proveedores";
             this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button6.UseVisualStyleBackColor = false;
@@ -310,6 +319,7 @@
             this.button7.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button7.Size = new System.Drawing.Size(233, 40);
             this.button7.TabIndex = 1;
+            this.button7.TabStop = false;
             this.button7.Text = "Ver Inventario";
             this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button7.UseVisualStyleBackColor = false;
@@ -330,6 +340,7 @@
             this.button8.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button8.Size = new System.Drawing.Size(233, 40);
             this.button8.TabIndex = 0;
+            this.button8.TabStop = false;
             this.button8.Text = "Buscar Producto";
             this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button8.UseVisualStyleBackColor = false;
@@ -354,6 +365,7 @@
             this.btnPlaylist.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnPlaylist.Size = new System.Drawing.Size(233, 45);
             this.btnPlaylist.TabIndex = 3;
+            this.btnPlaylist.TabStop = false;
             this.btnPlaylist.Text = " Productos";
             this.btnPlaylist.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPlaylist.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -388,6 +400,7 @@
             this.button5.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button5.Size = new System.Drawing.Size(233, 40);
             this.button5.TabIndex = 3;
+            this.button5.TabStop = false;
             this.button5.Text = "Revisar Corte";
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button5.UseVisualStyleBackColor = false;
@@ -408,6 +421,7 @@
             this.button4.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button4.Size = new System.Drawing.Size(233, 40);
             this.button4.TabIndex = 2;
+            this.button4.TabStop = false;
             this.button4.Text = "Salida Efectivo";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button4.UseVisualStyleBackColor = false;
@@ -428,6 +442,7 @@
             this.button3.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button3.Size = new System.Drawing.Size(233, 40);
             this.button3.TabIndex = 1;
+            this.button3.TabStop = false;
             this.button3.Text = "Entrada Efectivo";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.UseVisualStyleBackColor = false;
@@ -448,6 +463,7 @@
             this.button2.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button2.Size = new System.Drawing.Size(233, 40);
             this.button2.TabIndex = 0;
+            this.button2.TabStop = false;
             this.button2.Text = "Realizar Venta";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.UseVisualStyleBackColor = false;
@@ -473,6 +489,7 @@
             this.btnMedia.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnMedia.Size = new System.Drawing.Size(233, 45);
             this.btnMedia.TabIndex = 1;
+            this.btnMedia.TabStop = false;
             this.btnMedia.Text = " Venta";
             this.btnMedia.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMedia.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -548,7 +565,9 @@
             this.TotalBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.TotalBox.Size = new System.Drawing.Size(344, 73);
             this.TotalBox.TabIndex = 11;
+            this.TotalBox.TabStop = false;
             this.TotalBox.Text = "$0.00";
+            this.TotalBox.Click += new System.EventHandler(this.TotalBox_Click);
             // 
             // label5
             // 
@@ -576,9 +595,11 @@
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(126, 57);
             this.button18.TabIndex = 12;
+            this.button18.TabStop = false;
             this.button18.Text = "Eliminar Todo";
             this.button18.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button18.UseVisualStyleBackColor = false;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
             // 
             // button17
             // 
@@ -593,9 +614,11 @@
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(126, 100);
             this.button17.TabIndex = 11;
+            this.button17.TabStop = false;
             this.button17.Text = "Cobrar";
             this.button17.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button17.UseVisualStyleBackColor = false;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
             // 
             // button16
             // 
@@ -610,27 +633,29 @@
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(102, 36);
             this.button16.TabIndex = 10;
+            this.button16.TabStop = false;
             this.button16.Text = "  Eliminar";
             this.button16.UseVisualStyleBackColor = false;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
             // Tabla
             // 
             this.Tabla.AllowUserToAddRows = false;
             this.Tabla.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Tabla.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Tabla.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.Tabla.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.Tabla.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.Tabla.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Tabla.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Tabla.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Tabla.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.Tabla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Tabla.DoubleBuffered = true;
             this.Tabla.EnableHeadersVisualStyles = false;
@@ -642,12 +667,14 @@
             this.Tabla.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.Tabla.Size = new System.Drawing.Size(672, 325);
             this.Tabla.TabIndex = 1;
+            this.Tabla.TabStop = false;
             // 
             // panel1
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.panel1.Controls.Add(this.LabelName);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.bunifuGradientPanel1);
             this.panel1.Controls.Add(this.button14);
@@ -697,9 +724,13 @@
             this.BasBox.ForeColor = System.Drawing.Color.Lime;
             this.BasBox.Location = new System.Drawing.Point(109, 29);
             this.BasBox.Name = "BasBox";
+            this.BasBox.ReadOnly = true;
             this.BasBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.BasBox.Size = new System.Drawing.Size(181, 49);
             this.BasBox.TabIndex = 10;
+            this.BasBox.TabStop = false;
+            this.BasBox.Click += new System.EventHandler(this.BasBox_Click);
+            this.BasBox.TextChanged += new System.EventHandler(this.BasBox_TextChanged);
             // 
             // pictureBox3
             // 
@@ -724,7 +755,9 @@
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(36, 36);
             this.button14.TabIndex = 4;
+            this.button14.TabStop = false;
             this.button14.UseVisualStyleBackColor = false;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // label2
             // 
@@ -760,8 +793,10 @@
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(116, 36);
             this.button15.TabIndex = 5;
+            this.button15.TabStop = false;
             this.button15.Text = "  Buscar";
             this.button15.UseVisualStyleBackColor = false;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // button11
             // 
@@ -775,8 +810,10 @@
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(102, 36);
             this.button11.TabIndex = 3;
+            this.button11.TabStop = false;
             this.button11.Text = "  Borrar";
             this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button9
             // 
@@ -790,8 +827,10 @@
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(151, 36);
             this.button9.TabIndex = 2;
+            this.button9.TabStop = false;
             this.button9.Text = "  Agregar";
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click_1);
             // 
             // CodBox
             // 
@@ -799,7 +838,9 @@
             this.CodBox.Location = new System.Drawing.Point(21, 47);
             this.CodBox.Name = "CodBox";
             this.CodBox.Size = new System.Drawing.Size(599, 36);
-            this.CodBox.TabIndex = 1;
+            this.CodBox.TabIndex = 0;
+            this.CodBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.CodBox_KeyDown);
+            this.CodBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CodBox_KeyPress);
             // 
             // label1
             // 
@@ -818,6 +859,17 @@
             this.timer1.Interval = 250;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // LabelName
+            // 
+            this.LabelName.AutoSize = true;
+            this.LabelName.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelName.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.LabelName.Location = new System.Drawing.Point(29, 162);
+            this.LabelName.Name = "LabelName";
+            this.LabelName.Size = new System.Drawing.Size(108, 31);
+            this.LabelName.TabIndex = 10;
+            this.LabelName.Text = "Name//";
+            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -833,6 +885,7 @@
             this.Name = "Principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.VisibleChanged += new System.EventHandler(this.Principal_VisibleChanged);
             this.panelSideMenu.ResumeLayout(false);
             this.panelToolsSubMenu.ResumeLayout(false);
             this.panelPlaylistSubMenu.ResumeLayout(false);
@@ -898,6 +951,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.TextBox BasBox;
+        private System.Windows.Forms.Label LabelName;
     }
 }
 
