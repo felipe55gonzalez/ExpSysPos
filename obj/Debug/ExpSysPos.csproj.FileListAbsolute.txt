@@ -10,3 +10,8 @@ C:\Users\Ciber\Documents\GitHub\ExpSysPos\obj\Debug\ExpSysPos.pdb
 C:\Users\Ciber\Documents\GitHub\ExpSysPos\obj\Debug\ExpSysPos.Splash.resources
 C:\Users\Ciber\Documents\GitHub\ExpSysPos\obj\Debug\ExpSysPos.Principal.resources
 C:\Users\Ciber\Documents\GitHub\ExpSysPos\obj\Debug\ExpSysPos.Login.resources
+C:\Users\Ciber\Documents\GitHub\ExpSysPos\obj\Debug\ExpSysPos.Metododepago.resources
+C:\Users\Ciber\Documents\GitHub\ExpSysPos\obj\Debug\ExpSysPos.Efectivo.resources
+C:\Users\Ciber\Documents\GitHub\ExpSysPos\obj\Debug\ExpSysPos.Proveedores.resources
+C:\Users\Ciber\Documents\GitHub\ExpSysPos\obj\Debug\ExpSysPos.Departamntos.resources
+C:\Users\Ciber\Documents\GitHub\ExpSysPos\obj\Debug\ExpSysPos.Productos.resources

@@ -30,8 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelSideMenu = new System.Windows.Forms.Panel();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnHelp = new System.Windows.Forms.Button();
@@ -56,27 +59,43 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.table = new System.Windows.Forms.Panel();
+            this.k8 = new System.Windows.Forms.Label();
+            this.k7 = new System.Windows.Forms.Label();
+            this.k6 = new System.Windows.Forms.Label();
+            this.Lista = new System.Windows.Forms.DataGridView();
+            this.Tcod = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tname = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TCantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tpu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tinv = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TotalBox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.Tabla = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.eliminarallbtn = new System.Windows.Forms.Button();
+            this.cobrarbtn = new System.Windows.Forms.Button();
+            this.eliminarbtn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.Switch = new Bunifu.Framework.UI.BunifuSwitch();
+            this.k4 = new System.Windows.Forms.Label();
+            this.k3 = new System.Windows.Forms.Label();
+            this.k2 = new System.Windows.Forms.Label();
+            this.k1 = new System.Windows.Forms.Label();
+            this.LabelName = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.k5 = new System.Windows.Forms.Label();
             this.BasBox = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.button14 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.CantBox = new System.Windows.Forms.TextBox();
-            this.button15 = new System.Windows.Forms.Button();
+            this.buscarbtn = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.CodBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.LabelName = new System.Windows.Forms.Label();
             this.panelSideMenu.SuspendLayout();
             this.panelToolsSubMenu.SuspendLayout();
             this.panelPlaylistSubMenu.SuspendLayout();
@@ -85,7 +104,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.table.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Tabla)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Lista)).BeginInit();
             this.panel1.SuspendLayout();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -107,7 +126,7 @@
             this.panelSideMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelSideMenu.Location = new System.Drawing.Point(0, 0);
             this.panelSideMenu.Name = "panelSideMenu";
-            this.panelSideMenu.Size = new System.Drawing.Size(250, 679);
+            this.panelSideMenu.Size = new System.Drawing.Size(250, 675);
             this.panelSideMenu.TabIndex = 0;
             // 
             // btnExit
@@ -182,7 +201,7 @@
             this.button10.Size = new System.Drawing.Size(233, 40);
             this.button10.TabIndex = 2;
             this.button10.TabStop = false;
-            this.button10.Text = "Preferences";
+            this.button10.Text = "Acerca del Programa";
             this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button10.UseVisualStyleBackColor = true;
             this.button10.Click += new System.EventHandler(this.button10_Click);
@@ -201,7 +220,7 @@
             this.button12.Size = new System.Drawing.Size(233, 40);
             this.button12.TabIndex = 1;
             this.button12.TabStop = false;
-            this.button12.Text = "Effects and filters";
+            this.button12.Text = "Base De Datos";
             this.button12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button12.UseVisualStyleBackColor = true;
             this.button12.Click += new System.EventHandler(this.button12_Click);
@@ -220,7 +239,7 @@
             this.button13.Size = new System.Drawing.Size(233, 40);
             this.button13.TabIndex = 0;
             this.button13.TabStop = false;
-            this.button13.Text = "Media converter";
+            this.button13.Text = "Usuarios";
             this.button13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button13.UseVisualStyleBackColor = true;
             this.button13.Click += new System.EventHandler(this.button13_Click);
@@ -278,7 +297,7 @@
             this.button1.Size = new System.Drawing.Size(233, 40);
             this.button1.TabIndex = 3;
             this.button1.TabStop = false;
-            this.button1.Text = "Reportes";
+            this.button1.Text = "Departamentos";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -341,7 +360,7 @@
             this.button8.Size = new System.Drawing.Size(233, 40);
             this.button8.TabIndex = 0;
             this.button8.TabStop = false;
-            this.button8.Text = "Buscar Producto";
+            this.button8.Text = "Ver Productos";
             this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button8.UseVisualStyleBackColor = false;
             this.button8.Click += new System.EventHandler(this.button8_Click);
@@ -540,18 +559,162 @@
             this.table.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
             this.table.BackgroundImage = global::ExpSysPos.Properties.Resources.Fondo;
             this.table.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.table.Controls.Add(this.k8);
+            this.table.Controls.Add(this.k7);
+            this.table.Controls.Add(this.k6);
+            this.table.Controls.Add(this.Lista);
             this.table.Controls.Add(this.TotalBox);
             this.table.Controls.Add(this.label5);
-            this.table.Controls.Add(this.button18);
-            this.table.Controls.Add(this.button17);
-            this.table.Controls.Add(this.button16);
-            this.table.Controls.Add(this.Tabla);
+            this.table.Controls.Add(this.eliminarallbtn);
+            this.table.Controls.Add(this.cobrarbtn);
+            this.table.Controls.Add(this.eliminarbtn);
             this.table.Controls.Add(this.panel1);
             this.table.Location = new System.Drawing.Point(250, 0);
             this.table.Name = "table";
-            this.table.Size = new System.Drawing.Size(842, 679);
+            this.table.Size = new System.Drawing.Size(984, 675);
             this.table.TabIndex = 2;
             this.table.Paint += new System.Windows.Forms.PaintEventHandler(this.panelChildForm_Paint);
+            this.table.Resize += new System.EventHandler(this.table_Resize);
+            // 
+            // k8
+            // 
+            this.k8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.k8.AutoSize = true;
+            this.k8.BackColor = System.Drawing.Color.Transparent;
+            this.k8.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.k8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.k8.Location = new System.Drawing.Point(898, 483);
+            this.k8.Name = "k8";
+            this.k8.Size = new System.Drawing.Size(21, 12);
+            this.k8.TabIndex = 17;
+            this.k8.Text = "F12";
+            // 
+            // k7
+            // 
+            this.k7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.k7.AutoSize = true;
+            this.k7.BackColor = System.Drawing.Color.Transparent;
+            this.k7.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.k7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.k7.Location = new System.Drawing.Point(903, 302);
+            this.k7.Name = "k7";
+            this.k7.Size = new System.Drawing.Size(16, 12);
+            this.k7.TabIndex = 16;
+            this.k7.Text = "F8";
+            // 
+            // k6
+            // 
+            this.k6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.k6.AutoSize = true;
+            this.k6.BackColor = System.Drawing.Color.Transparent;
+            this.k6.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.k6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.k6.Location = new System.Drawing.Point(903, 257);
+            this.k6.Name = "k6";
+            this.k6.Size = new System.Drawing.Size(16, 12);
+            this.k6.TabIndex = 15;
+            this.k6.Text = "F7";
+            // 
+            // Lista
+            // 
+            this.Lista.AllowUserToAddRows = false;
+            this.Lista.AllowUserToDeleteRows = false;
+            this.Lista.AllowUserToResizeRows = false;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.Lista.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
+            this.Lista.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.Lista.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.Lista.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Lista.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Lista.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            this.Lista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Lista.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Tcod,
+            this.Tname,
+            this.TCantidad,
+            this.Tpu,
+            this.Tp,
+            this.Tinv});
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.ForestGreen;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.DarkSlateGray;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.Lista.DefaultCellStyle = dataGridViewCellStyle8;
+            this.Lista.GridColor = System.Drawing.SystemColors.ButtonFace;
+            this.Lista.Location = new System.Drawing.Point(20, 261);
+            this.Lista.Name = "Lista";
+            this.Lista.ReadOnly = true;
+            this.Lista.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.DarkCyan;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Azure;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Lista.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            this.Lista.RowHeadersWidth = 40;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.MediumSeaGreen;
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Azure;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.SeaGreen;
+            this.Lista.RowsDefaultCellStyle = dataGridViewCellStyle10;
+            this.Lista.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.Lista.Size = new System.Drawing.Size(800, 326);
+            this.Lista.TabIndex = 14;
+            this.Lista.TabStop = false;
+            this.Lista.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Lista_CellClick);
+            // 
+            // Tcod
+            // 
+            this.Tcod.HeaderText = "Codigo";
+            this.Tcod.Name = "Tcod";
+            this.Tcod.ReadOnly = true;
+            this.Tcod.Width = 220;
+            // 
+            // Tname
+            // 
+            this.Tname.HeaderText = "Nombre";
+            this.Tname.Name = "Tname";
+            this.Tname.ReadOnly = true;
+            this.Tname.Width = 220;
+            // 
+            // TCantidad
+            // 
+            this.TCantidad.HeaderText = "Cantidad / Peso";
+            this.TCantidad.Name = "TCantidad";
+            this.TCantidad.ReadOnly = true;
+            this.TCantidad.Width = 70;
+            // 
+            // Tpu
+            // 
+            this.Tpu.HeaderText = "Precio U.";
+            this.Tpu.Name = "Tpu";
+            this.Tpu.ReadOnly = true;
+            this.Tpu.Width = 70;
+            // 
+            // Tp
+            // 
+            this.Tp.HeaderText = "Total Producto";
+            this.Tp.Name = "Tp";
+            this.Tp.ReadOnly = true;
+            // 
+            // Tinv
+            // 
+            this.Tinv.HeaderText = "Inventario";
+            this.Tinv.Name = "Tinv";
+            this.Tinv.ReadOnly = true;
+            this.Tinv.Width = 80;
             // 
             // TotalBox
             // 
@@ -559,7 +722,7 @@
             this.TotalBox.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.TotalBox.Font = new System.Drawing.Font("OCR-B 10 BT", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TotalBox.ForeColor = System.Drawing.Color.Lime;
-            this.TotalBox.Location = new System.Drawing.Point(348, 594);
+            this.TotalBox.Location = new System.Drawing.Point(419, 590);
             this.TotalBox.Name = "TotalBox";
             this.TotalBox.ReadOnly = true;
             this.TotalBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -576,119 +739,185 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Monospac821 BT", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.LightGray;
-            this.label5.Location = new System.Drawing.Point(202, 608);
+            this.label5.Location = new System.Drawing.Point(273, 604);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(152, 45);
             this.label5.TabIndex = 13;
             this.label5.Text = "Total:";
             // 
-            // button18
+            // eliminarallbtn
             // 
-            this.button18.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button18.BackColor = System.Drawing.Color.Teal;
-            this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button18.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button18.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button18.Image = global::ExpSysPos.Properties.Resources.borrar;
-            this.button18.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button18.Location = new System.Drawing.Point(704, 304);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(126, 57);
-            this.button18.TabIndex = 12;
-            this.button18.TabStop = false;
-            this.button18.Text = "Eliminar Todo";
-            this.button18.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button18.UseVisualStyleBackColor = false;
-            this.button18.Click += new System.EventHandler(this.button18_Click);
+            this.eliminarallbtn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.eliminarallbtn.BackColor = System.Drawing.Color.Teal;
+            this.eliminarallbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.eliminarallbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.eliminarallbtn.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.eliminarallbtn.Image = global::ExpSysPos.Properties.Resources.borrar;
+            this.eliminarallbtn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.eliminarallbtn.Location = new System.Drawing.Point(846, 309);
+            this.eliminarallbtn.Name = "eliminarallbtn";
+            this.eliminarallbtn.Size = new System.Drawing.Size(126, 57);
+            this.eliminarallbtn.TabIndex = 12;
+            this.eliminarallbtn.TabStop = false;
+            this.eliminarallbtn.Text = "Eliminar Todo";
+            this.eliminarallbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.eliminarallbtn.UseVisualStyleBackColor = false;
+            this.eliminarallbtn.Click += new System.EventHandler(this.button18_Click);
             // 
-            // button17
+            // cobrarbtn
             // 
-            this.button17.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button17.BackColor = System.Drawing.Color.Teal;
-            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button17.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button17.Image = global::ExpSysPos.Properties.Resources.compra;
-            this.button17.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button17.Location = new System.Drawing.Point(704, 490);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(126, 100);
-            this.button17.TabIndex = 11;
-            this.button17.TabStop = false;
-            this.button17.Text = "Cobrar";
-            this.button17.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button17.UseVisualStyleBackColor = false;
-            this.button17.Click += new System.EventHandler(this.button17_Click);
+            this.cobrarbtn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cobrarbtn.BackColor = System.Drawing.Color.Teal;
+            this.cobrarbtn.Enabled = false;
+            this.cobrarbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cobrarbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cobrarbtn.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.cobrarbtn.Image = global::ExpSysPos.Properties.Resources.compra;
+            this.cobrarbtn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.cobrarbtn.Location = new System.Drawing.Point(846, 488);
+            this.cobrarbtn.Name = "cobrarbtn";
+            this.cobrarbtn.Size = new System.Drawing.Size(126, 100);
+            this.cobrarbtn.TabIndex = 11;
+            this.cobrarbtn.TabStop = false;
+            this.cobrarbtn.Text = "Cobrar";
+            this.cobrarbtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.cobrarbtn.UseVisualStyleBackColor = false;
+            this.cobrarbtn.Click += new System.EventHandler(this.button17_Click);
             // 
-            // button16
+            // eliminarbtn
             // 
-            this.button16.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button16.BackColor = System.Drawing.Color.Teal;
-            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button16.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button16.Image = global::ExpSysPos.Properties.Resources.cruzar;
-            this.button16.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button16.Location = new System.Drawing.Point(715, 265);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(102, 36);
-            this.button16.TabIndex = 10;
-            this.button16.TabStop = false;
-            this.button16.Text = "  Eliminar";
-            this.button16.UseVisualStyleBackColor = false;
-            this.button16.Click += new System.EventHandler(this.button16_Click);
-            // 
-            // Tabla
-            // 
-            this.Tabla.AllowUserToAddRows = false;
-            this.Tabla.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Tabla.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
-            this.Tabla.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.Tabla.BackgroundColor = System.Drawing.Color.WhiteSmoke;
-            this.Tabla.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Tabla.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Tabla.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
-            this.Tabla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Tabla.DoubleBuffered = true;
-            this.Tabla.EnableHeadersVisualStyles = false;
-            this.Tabla.HeaderBgColor = System.Drawing.Color.SeaGreen;
-            this.Tabla.HeaderForeColor = System.Drawing.Color.SeaGreen;
-            this.Tabla.Location = new System.Drawing.Point(20, 265);
-            this.Tabla.Name = "Tabla";
-            this.Tabla.ReadOnly = true;
-            this.Tabla.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.Tabla.Size = new System.Drawing.Size(672, 325);
-            this.Tabla.TabIndex = 1;
-            this.Tabla.TabStop = false;
+            this.eliminarbtn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.eliminarbtn.BackColor = System.Drawing.Color.Teal;
+            this.eliminarbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.eliminarbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.eliminarbtn.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.eliminarbtn.Image = global::ExpSysPos.Properties.Resources.cruzar;
+            this.eliminarbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.eliminarbtn.Location = new System.Drawing.Point(858, 263);
+            this.eliminarbtn.Name = "eliminarbtn";
+            this.eliminarbtn.Size = new System.Drawing.Size(102, 36);
+            this.eliminarbtn.TabIndex = 10;
+            this.eliminarbtn.TabStop = false;
+            this.eliminarbtn.Text = "  Eliminar";
+            this.eliminarbtn.UseVisualStyleBackColor = false;
+            this.eliminarbtn.Click += new System.EventHandler(this.button16_Click);
             // 
             // panel1
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.Switch);
+            this.panel1.Controls.Add(this.k4);
+            this.panel1.Controls.Add(this.k3);
+            this.panel1.Controls.Add(this.k2);
+            this.panel1.Controls.Add(this.k1);
             this.panel1.Controls.Add(this.LabelName);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.bunifuGradientPanel1);
             this.panel1.Controls.Add(this.button14);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.CantBox);
-            this.panel1.Controls.Add(this.button15);
+            this.panel1.Controls.Add(this.buscarbtn);
             this.panel1.Controls.Add(this.button11);
             this.panel1.Controls.Add(this.button9);
             this.panel1.Controls.Add(this.CodBox);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(20, 22);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(797, 235);
+            this.panel1.Size = new System.Drawing.Size(939, 235);
             this.panel1.TabIndex = 0;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label4.Location = new System.Drawing.Point(823, 14);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(92, 13);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "Atajos Teclado";
+            // 
+            // Switch
+            // 
+            this.Switch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Switch.BorderRadius = 0;
+            this.Switch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Switch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Switch.Location = new System.Drawing.Point(848, 31);
+            this.Switch.Margin = new System.Windows.Forms.Padding(4);
+            this.Switch.Name = "Switch";
+            this.Switch.Oncolor = System.Drawing.Color.SeaGreen;
+            this.Switch.Onoffcolor = System.Drawing.Color.DarkGray;
+            this.Switch.Size = new System.Drawing.Size(51, 19);
+            this.Switch.TabIndex = 15;
+            this.Switch.TabStop = false;
+            this.Switch.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Switch.Value = false;
+            this.Switch.Load += new System.EventHandler(this.Switch_Load);
+            this.Switch.Click += new System.EventHandler(this.Switch_Click);
+            // 
+            // k4
+            // 
+            this.k4.AutoSize = true;
+            this.k4.BackColor = System.Drawing.Color.Transparent;
+            this.k4.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.k4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.k4.Location = new System.Drawing.Point(199, 91);
+            this.k4.Name = "k4";
+            this.k4.Size = new System.Drawing.Size(16, 12);
+            this.k4.TabIndex = 14;
+            this.k4.Text = "F3";
+            // 
+            // k3
+            // 
+            this.k3.AutoSize = true;
+            this.k3.BackColor = System.Drawing.Color.Transparent;
+            this.k3.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.k3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.k3.Location = new System.Drawing.Point(57, 91);
+            this.k3.Name = "k3";
+            this.k3.Size = new System.Drawing.Size(32, 12);
+            this.k3.TabIndex = 13;
+            this.k3.Text = "Delete";
+            // 
+            // k2
+            // 
+            this.k2.AutoSize = true;
+            this.k2.BackColor = System.Drawing.Color.Transparent;
+            this.k2.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.k2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.k2.Location = new System.Drawing.Point(694, 40);
+            this.k2.Name = "k2";
+            this.k2.Size = new System.Drawing.Size(16, 12);
+            this.k2.TabIndex = 12;
+            this.k2.Text = "F2";
+            // 
+            // k1
+            // 
+            this.k1.AutoSize = true;
+            this.k1.BackColor = System.Drawing.Color.Transparent;
+            this.k1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.k1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.k1.Location = new System.Drawing.Point(533, 40);
+            this.k1.Name = "k1";
+            this.k1.Size = new System.Drawing.Size(27, 12);
+            this.k1.TabIndex = 11;
+            this.k1.Text = "Enter";
+            // 
+            // LabelName
+            // 
+            this.LabelName.AutoSize = true;
+            this.LabelName.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelName.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.LabelName.Location = new System.Drawing.Point(29, 162);
+            this.LabelName.Name = "LabelName";
+            this.LabelName.Size = new System.Drawing.Size(108, 31);
+            this.LabelName.TabIndex = 10;
+            this.LabelName.Text = "Name//";
             // 
             // label3
             // 
@@ -705,6 +934,7 @@
             // 
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.Controls.Add(this.k5);
             this.bunifuGradientPanel1.Controls.Add(this.BasBox);
             this.bunifuGradientPanel1.Controls.Add(this.pictureBox3);
             this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.ForestGreen;
@@ -716,6 +946,18 @@
             this.bunifuGradientPanel1.Quality = 10;
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(293, 103);
             this.bunifuGradientPanel1.TabIndex = 8;
+            // 
+            // k5
+            // 
+            this.k5.AutoSize = true;
+            this.k5.BackColor = System.Drawing.Color.Transparent;
+            this.k5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.k5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.k5.Location = new System.Drawing.Point(274, 0);
+            this.k5.Name = "k5";
+            this.k5.Size = new System.Drawing.Size(21, 15);
+            this.k5.TabIndex = 15;
+            this.k5.Text = "F5";
             // 
             // BasBox
             // 
@@ -781,22 +1023,22 @@
             this.CantBox.TabIndex = 6;
             this.CantBox.Text = "1";
             // 
-            // button15
+            // buscarbtn
             // 
-            this.button15.BackColor = System.Drawing.Color.Teal;
-            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button15.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button15.Image = global::ExpSysPos.Properties.Resources.buscar;
-            this.button15.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button15.Location = new System.Drawing.Point(152, 98);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(116, 36);
-            this.button15.TabIndex = 5;
-            this.button15.TabStop = false;
-            this.button15.Text = "  Buscar";
-            this.button15.UseVisualStyleBackColor = false;
-            this.button15.Click += new System.EventHandler(this.button15_Click);
+            this.buscarbtn.BackColor = System.Drawing.Color.Teal;
+            this.buscarbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buscarbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buscarbtn.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.buscarbtn.Image = global::ExpSysPos.Properties.Resources.buscar;
+            this.buscarbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buscarbtn.Location = new System.Drawing.Point(152, 98);
+            this.buscarbtn.Name = "buscarbtn";
+            this.buscarbtn.Size = new System.Drawing.Size(116, 36);
+            this.buscarbtn.TabIndex = 5;
+            this.buscarbtn.TabStop = false;
+            this.buscarbtn.Text = "  Buscar";
+            this.buscarbtn.UseVisualStyleBackColor = false;
+            this.buscarbtn.Click += new System.EventHandler(this.button15_Click);
             // 
             // button11
             // 
@@ -839,6 +1081,7 @@
             this.CodBox.Name = "CodBox";
             this.CodBox.Size = new System.Drawing.Size(599, 36);
             this.CodBox.TabIndex = 0;
+            this.CodBox.TextChanged += new System.EventHandler(this.CodBox_TextChanged);
             this.CodBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.CodBox_KeyDown);
             this.CodBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CodBox_KeyPress);
             // 
@@ -849,33 +1092,21 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(17, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(209, 24);
+            this.label1.Size = new System.Drawing.Size(210, 24);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Codigo Del Procucto:";
+            this.label1.Text = "Codigo Del Producto:";
             // 
             // timer1
             // 
-            this.timer1.Enabled = true;
             this.timer1.Interval = 250;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // LabelName
-            // 
-            this.LabelName.AutoSize = true;
-            this.LabelName.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelName.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.LabelName.Location = new System.Drawing.Point(29, 162);
-            this.LabelName.Name = "LabelName";
-            this.LabelName.Size = new System.Drawing.Size(108, 31);
-            this.LabelName.TabIndex = 10;
-            this.LabelName.Text = "Name//";
             // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1092, 679);
+            this.ClientSize = new System.Drawing.Size(1234, 675);
             this.Controls.Add(this.table);
             this.Controls.Add(this.panelSideMenu);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -885,7 +1116,11 @@
             this.Name = "Principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Principal_FormClosing);
+            this.Load += new System.EventHandler(this.Principal_Load);
             this.VisibleChanged += new System.EventHandler(this.Principal_VisibleChanged);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Principal_KeyDown);
+            this.Resize += new System.EventHandler(this.Principal_Resize);
             this.panelSideMenu.ResumeLayout(false);
             this.panelToolsSubMenu.ResumeLayout(false);
             this.panelPlaylistSubMenu.ResumeLayout(false);
@@ -895,7 +1130,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.table.ResumeLayout(false);
             this.table.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Tabla)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Lista)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.bunifuGradientPanel1.ResumeLayout(false);
@@ -937,21 +1172,37 @@
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.TextBox CantBox;
-        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button buscarbtn;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
         private System.Windows.Forms.Label label3;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid Tabla;
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Button button18;
+        private System.Windows.Forms.Button eliminarbtn;
+        private System.Windows.Forms.Button cobrarbtn;
+        private System.Windows.Forms.Button eliminarallbtn;
         private System.Windows.Forms.TextBox TotalBox;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.TextBox BasBox;
         private System.Windows.Forms.Label LabelName;
+        private System.Windows.Forms.DataGridView Lista;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Tcod;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Tname;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TCantidad;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Tpu;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Tp;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Tinv;
+        private System.Windows.Forms.Label k1;
+        private System.Windows.Forms.Label k4;
+        private System.Windows.Forms.Label k3;
+        private System.Windows.Forms.Label k2;
+        private System.Windows.Forms.Label k5;
+        private System.Windows.Forms.Label k8;
+        private System.Windows.Forms.Label k7;
+        private System.Windows.Forms.Label k6;
+        private Bunifu.Framework.UI.BunifuSwitch Switch;
+        private System.Windows.Forms.Label label4;
     }
 }
 

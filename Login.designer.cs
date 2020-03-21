@@ -147,7 +147,7 @@
         private  System.Windows.Forms.TextBox usertxt;
         private System.Windows.Forms.TextBox passtxt;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button Close;
+        private new System.Windows.Forms.Button Close;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
     }
